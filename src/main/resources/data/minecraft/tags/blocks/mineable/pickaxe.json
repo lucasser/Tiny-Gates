@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "tinygates:and_gate_block",
+    "tinygates:add_gate_block",
     "tinygates:clock_block",
     "tinygates:counter_block",
     "tinygates:edge_detector_block",

@@ -13,6 +13,7 @@ import static com.dannyandson.tinygates.setup.Registration.ITEMS;
 public class RegistrationTinyRedstone {
 
     public static final RegistryObject<Item> TINY_AND_GATE_ITEM = ITEMS.register("tiny_and_gate", PanelCellGateItem::new);
+    public static final RegistryObject<Item> TINY_ADD_GATE_ITEM = ITEMS.register("tiny_add_gate", PanelCellGateItem::new);
     public static final RegistryObject<Item> TINY_OR_GATE_ITEM = ITEMS.register("tiny_or_gate", PanelCellGateItem::new);
     public static final RegistryObject<Item> TINY_XOR_GATE_ITEM = ITEMS.register("tiny_xor_gate", PanelCellGateItem::new);
     public static final RegistryObject<Item> TINY_NOT_GATE_ITEM = ITEMS.register("tiny_not_gate", PanelCellGateItem::new);
@@ -29,6 +30,7 @@ public class RegistrationTinyRedstone {
     //called at FMLCommonSetupEvent in ModSetup
     public static void registerPanelCells(){
         TinyRedstone.registerPanelCell(ANDGate.class, TINY_AND_GATE_ITEM.get());
+        TinyRedstone.registerPanelCell(ADDGate.class, TINY_ADD_GATE_ITEM.get());
         TinyRedstone.registerPanelCell(ORGate.class, TINY_OR_GATE_ITEM.get());
         TinyRedstone.registerPanelCell(XORGate.class, TINY_XOR_GATE_ITEM.get());
         TinyRedstone.registerPanelCell(NOTGate.class, TINY_NOT_GATE_ITEM.get());

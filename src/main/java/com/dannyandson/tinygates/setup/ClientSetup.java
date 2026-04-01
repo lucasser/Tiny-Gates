@@ -17,6 +17,7 @@ public class ClientSetup {
     @SubscribeEvent
     public static void onRegisterRenderer(EntityRenderersEvent.RegisterRenderers event){
         event.registerBlockEntityRenderer(Registration.AND_GATE_BLOCK_ENTITY.get(), GateBlockRenderer::new);
+        event.registerBlockEntityRenderer(Registration.ADD_GATE_BLOCK_ENTITY.get(), GateBlockRenderer::new);
         event.registerBlockEntityRenderer(Registration.CLOCK_BLOCK_ENTITY.get(), GateBlockRenderer::new);
         event.registerBlockEntityRenderer(Registration.COUNTER_BLOCK_ENTITY.get(), GateBlockRenderer::new);
         event.registerBlockEntityRenderer(Registration.EDGE_DETECTOR_BLOCK_ENTITY.get(), GateBlockRenderer::new);

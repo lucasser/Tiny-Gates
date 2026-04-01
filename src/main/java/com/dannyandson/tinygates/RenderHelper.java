@@ -13,6 +13,10 @@ public class RenderHelper {
 
     public static ResourceLocation TEXTURE_AND_GATE_ON = new ResourceLocation(TinyGates.MODID,"block/and_gate_on");
     public static ResourceLocation TEXTURE_AND_GATE_OFF = new ResourceLocation(TinyGates.MODID,"block/and_gate_off");
+
+    public static ResourceLocation TEXTURE_ADD_GATE_ON = new ResourceLocation(TinyGates.MODID,"block/add_gate_on");
+    public static ResourceLocation TEXTURE_ADD_GATE_OFF = new ResourceLocation(TinyGates.MODID,"block/add_gate_off");
+
     public static ResourceLocation[] TEXTURES_CLOCK = {
             new ResourceLocation(TinyGates.MODID, "block/clock_1"),
             new ResourceLocation(TinyGates.MODID, "block/clock_2"),

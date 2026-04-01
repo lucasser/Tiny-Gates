@@ -28,6 +28,12 @@ public class Registration {
     public static final RegistryObject<BlockEntityType<ANDGateBlockEntity>> AND_GATE_BLOCK_ENTITY =
             BLOCK_ENTITIES.register("and_gate_block", () -> BlockEntityType.Builder.of(ANDGateBlockEntity::new, AND_GATE_BLOCK.get()).build(null));
 
+    public static final RegistryObject<AddGateBlock> ADD_GATE_BLOCK = BLOCKS.register("add_gate_block", AddGateBlock::new);
+    public static final RegistryObject<Item> ADD_GATE_ITEM = ITEMS.register("add_gate_item",()->new GateBlockItem(ADD_GATE_BLOCK.get()));
+    public static final RegistryObject<BlockEntityType<AddGateBlockEntity>> ADD_GATE_BLOCK_ENTITY =
+        BLOCK_ENTITIES.register("add_gate_block", () -> BlockEntityType.Builder.of(AddGateBlockEntity::new, ADD_GATE_BLOCK.get()).build(null));
+
+
     public static final RegistryObject<ClockBlock> CLOCK_BLOCK = BLOCKS.register("clock_block", ClockBlock::new);
     public static final RegistryObject<Item> CLOCK_ITEM = ITEMS.register("clock_item",()-> new GateBlockItem(CLOCK_BLOCK.get()));
     public static final RegistryObject<BlockEntityType<ClockBlockEntity>> CLOCK_BLOCK_ENTITY =

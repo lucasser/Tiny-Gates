@@ -6,6 +6,10 @@ This mod adds the following tiny gates for use on redstone panels:
 ### Tiny AND Gate
 Outputs to front when a signal is received to both left AND right side.
 
+### Tiny Adder Gate
+Outputs the sum of left, right and back signal strengths.
+
+
 ### Tiny OR Gate
 Outputs to front when a signal is received to either left OR right side.
 
